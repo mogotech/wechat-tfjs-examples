@@ -1,13 +1,8 @@
 <!--index.wxml-->
 <view class="container">
-  <view class="userinfo">
-    <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 获取头像昵称 </button>
-    <block wx:else>
-      <image bindtap="bindViewTap" class="userinfo-avatar" src="{{userInfo.avatarUrl}}" mode="cover"></image>
-      <text class="userinfo-nickname">{{userInfo.nickName}}</text>
-    </block>
-  </view>
-  <view class="usermotto">
-    <text class="user-motto">{{motto}}</text>
+  <view class="button">
+    <view class="button-text" bindtap="go01_linear_regression">
+      <text>示例：线性回归</text>
+    </view>
   </view>
 </view>

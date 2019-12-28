@@ -1,7 +1,8 @@
 {
   "pages": [
     "pages/index/index",
-    "pages/logs/logs"
+    "pages/logs/logs",
+    "pages/01_linear_regression/index"
   ],
   "window": {
     "backgroundTextStyle": "light",
