@@ -2,7 +2,10 @@
 <view class="container">
   <view class="button">
     <view class="button-text" bindtap="go01_linear_regression">
-      <text>示例：线性回归</text>
+      <text>示例01：线性回归</text>
+    </view>
+    <view class="button-text" bindtap="go02_load_data">
+      <text>示例02：加载数据</text>
     </view>
   </view>
 </view>

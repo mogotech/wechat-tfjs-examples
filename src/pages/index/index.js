@@ -13,5 +13,10 @@ Page({
     wx.navigateTo({
       url: '../01_linear_regression/index'
     })
+  },
+  go02_load_data: function () {
+    wx.navigateTo({
+      url: '../02_load_data/index'
+    })
   }
 })
