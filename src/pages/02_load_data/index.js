@@ -1,5 +1,6 @@
 // pages/02_load_data/index.js
 const helper = require('script.js');
+const tf = require('@tensorflow/tfjs');
 
 Page({
 
@@ -20,12 +21,20 @@ Page({
       console.log("数据加载完毕");
 
       // 数据转换为tensor   
-      const { inputs, labels } = helper.convertToTensor(data);
+      const { inputs, labels, inputMax, inputMin, labelMax,labelMin } = helper.convertToTensor(data);
 
+      // 创建模型
       const model = helper.createModel();
 
+      // 训练模型
       await helper.trainModel(model, inputs, labels);
       console.log("模型训练完毕！");
+
+      const inputTensor = tf.tensor2d([5], [1, 1]);
+      const normalizedInputs = inputTensor.sub(inputMin).div(inputMax.sub(inputMin));
+      const preds = model.predict(normalizedInputs);
+      const unNormPreds = preds.mul(labelMax.sub(labelMin)).add(labelMin);
+      unNormPreds.print();
     }
 
     testLoadData();
