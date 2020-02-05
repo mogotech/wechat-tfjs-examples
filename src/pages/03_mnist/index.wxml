@@ -1,0 +1,4 @@
+<!--pages/03_mnist/index.wxml-->
+<text>手写数字识别示例</text>
+<image src="{{src}}" bindload="onImageLoaded"></image>
+<canvas canvas-id="mnistCanvas"></canvas>

@@ -7,5 +7,8 @@
     <view class="button-text" bindtap="go02_load_data">
       <text>示例02：加载数据</text>
     </view>
+    <view class="button-text" bindtap="go03_mnist">
+      <text>示例03：手写数字识别</text>
+    </view>
   </view>
 </view>

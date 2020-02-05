@@ -3,7 +3,8 @@
     "pages/index/index",
     "pages/logs/logs",
     "pages/01_linear_regression/index",
-    "pages/02_load_data/index"
+    "pages/02_load_data/index",
+    "pages/03_mnist/index"
   ],
   "window": {
     "backgroundTextStyle": "light",

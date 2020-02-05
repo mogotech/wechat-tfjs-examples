@@ -18,5 +18,10 @@ Page({
     wx.navigateTo({
       url: '../02_load_data/index'
     })
+  },
+  go03_mnist: function () {
+    wx.navigateTo({
+      url: '../03_mnist/index'
+    })
   }
 })
